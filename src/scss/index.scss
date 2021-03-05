@@ -1,0 +1,10 @@
+// BOOTSTRAP
+@import "bootstrap/scss/bootstrap-utilities.scss";
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+$primary: #ccc;
+
+.container {
+  background-color: $primary;
+}
