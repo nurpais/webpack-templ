@@ -14,6 +14,7 @@ module.exports = merge(common, {
   },
   module: {
     rules: [
+      // JavaScript: Use Babel to transpile JavaScript files
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -37,8 +38,6 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-   
-
     // Extracts CSS into separate files
     // Note: style-loader is for development, MiniCssExtractPlugin is for production
     new MiniCssExtractPlugin({

@@ -11,6 +11,7 @@ module.exports = {
     path: paths.build,
     filename: "[name].bundle.js",
     publicPath: "/",
+    pathinfo: false,
   },
 
   plugins: [
@@ -44,9 +45,6 @@ module.exports = {
           minimize: false,
         },
       },
-
-      // JavaScript: Use Babel to transpile JavaScript files
-      { test: /\.js$/, use: ["babel-loader"] },
 
       // Images: Copy image files to build folder
       {
