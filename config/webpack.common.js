@@ -62,7 +62,13 @@ module.exports = {
         },
       },
 
-      { test: /\.(woff(2)?|eot|ttf|otf|)$/, type: "asset/inline" },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
+      },
     ],
   },
 };
